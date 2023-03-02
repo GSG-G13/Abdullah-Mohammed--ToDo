@@ -1,0 +1,47 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: #f2f2f241;
+}
+
+.container {
+  height: 100vh;
+  margin: 0 auto;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem;
+}
+header a {
+  text-decoration: none;
+  color: #625e54;
+  font-weight: bold;
+  font-size: 2rem;
+}
+header button#add-task {
+  border: none;
+  cursor: pointer;
+}
+
+header button#add-task > svg {
+  width: 2rem;
+  height: 2rem;
+}
+
+@media (max-width: 899px) {
+  .container {
+    max-width: 600px;
+  }
+}
+@media (min-width: 900px) {
+  .container {
+    width: 80vw;
+  }
+}
