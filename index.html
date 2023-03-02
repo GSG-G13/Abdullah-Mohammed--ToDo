@@ -9,35 +9,31 @@
   <link rel="icon" href="https://mir-s3-cdn-cf.behance.net/user/source/0e77cd692314441.63a85b61412a7.png">
 </head>
 <body>
-  <main>
-    <div class="firstList">
-      <ul class="listIn">
-        <div class="li-container">
-          <div class="a1"></div>
-          <li>work</li>
+  <div class="page-container">
+
+    <main class="main">
+      <div class="container">
+        <h2 class="title">
+          <i class="fa-solid fa-list-check"></i>
+          <span class="shown-tasks"></span>
+          <span class="count">0</span>
+        </h2>
+        <div class="tasks-container">
+          <form class="form">
+            <div class="task-adder">
+            <button class="add-task-btn" type="submit">
+                <i class="fa-solid fa-plus"></i>
+              </button>
+              <input class="task-input-field" type="text" placeholder="Add a Task">
+              <input class="task-input-field" type="text" placeholder="Description">
+            </div>
+          </form>
+          <div class="tasks-list"></div>
         </div>
-        <div class="li-container">
-          <div class="a2"></div>
-          <li>study</li>
-        </div>
-        <div class="li-container">
-          <div class="a3"></div>
-          <li>intertainment</li>
-        </div>
-        <div class="li-container">
-          <div class="a1"></div>
-          <li>family</li>
-        </div>
-        
-      </ul>
-      <form>
-      <label for="chec">
-        <input id="chec" type="checkbox" name="hideDone">Hide Done Taske
-      </label>
-    </form>
-    </div>
-    
-  </main>
+      </div>
+    </main>
+  </div>
+
   <script src="script.js"></script>
 </body>
 </html>
