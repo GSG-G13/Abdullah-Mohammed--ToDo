@@ -1,10 +1,10 @@
 * {
   box-sizing: border-box;
-  font-family: 'Allerta', sans-serif;
+  font-family: "Allerta", sans-serif;
 }
 
 ::selection {
-  background-color:rgba(128, 128, 128, 0.15);
+  background-color: rgba(128, 128, 128, 0.15);
 }
 
 :root {
@@ -43,7 +43,7 @@ a {
   text-decoration: none;
 }
 
-.disabled, 
+.disabled,
 .non-active {
   pointer-events: none;
 }
@@ -51,7 +51,6 @@ a {
 .non-active {
   opacity: 0.4;
 }
-
 
 /* page container styling */
 
@@ -80,7 +79,7 @@ a {
 }
 
 .header .logo .go-home span {
-  color: var(--text-color)
+  color: var(--text-color);
 }
 
 .header .logo span .done {
@@ -103,7 +102,6 @@ a {
   justify-content: space-between;
   align-items: baseline;
   padding: 0 1em;
-
 }
 
 .main .container .title i {
@@ -183,7 +181,13 @@ a {
   margin-right: 4px;
 }
 
-.main .container .tasks-container .tasks-list .task .task-content .task-text.completed {
+.main
+  .container
+  .tasks-container
+  .tasks-list
+  .task
+  .task-content
+  .task-text.completed {
   text-decoration: line-through;
   opacity: 0.4;
 }
@@ -214,7 +218,6 @@ a {
 .main .container .tasks-container .tasks-list .task .task-controls .save:hover {
   background-color: var(--hotter-color);
 }
-
 
 .main .container .tasks-container .tasks-list .task .task-controls {
   display: flex;
@@ -260,7 +263,6 @@ a {
     transition: width 1.2s ease;
   }
 
-
   .navbar .container li .item {
     flex: 1 1 100%;
   }
@@ -283,13 +285,17 @@ a {
   .navbar .container img {
     width: 24px;
   }
-  
+
   .header .logo .go-home {
     pointer-events: auto;
-    font-size:2rem
+    font-size: 2rem;
   }
 
   .page-overlay {
     display: none;
   }
+}
+
+.main .container .tasks-container .tasks-list .task .hidden {
+  display: none !important;
 }
